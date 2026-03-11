@@ -157,7 +157,7 @@ for (i = 0; i < starWarsCharacters.length; i++) {
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
-let crewMass;
+let crewMass = 0;
 for (i = 0; i < starWarsCharacters.length; i++) {
   crewMass = crewMass + starWarsCharacters[i].mass;
 }
@@ -206,7 +206,7 @@ console.log(
   " elementi quando include i personaggi femminili",
 );
 
-for (i = 0; i < starWarsCharacters.length; i++) {
+for (i = 0; i < 2; i++) {
   if (charactersNames[i] === femaleCharacters[i].name) {
     charactersNames.splice(i, 1);
   }
@@ -215,5 +215,5 @@ console.log("e ne possiede ", charactersNames.length, " se vengono esclusi");
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-let personaggioCasuale = Math.ceil(Math.random * 10);
-console.log(starWarsCharacters[personaggioCasuale - 1]);
+let personaggioCasuale = Math.round(Math.random() * 9);
+console.log(starWarsCharacters[personaggioCasuale]);
